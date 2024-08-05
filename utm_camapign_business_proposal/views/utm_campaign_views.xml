@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="utm_campaign_view_form" model="ir.ui.view">
+    <field name="name">Campaign business proposal</field>
+    <field name="model">utm.campaign</field>
+    <field name="inherit_id" ref="utm.utm_campaign_view_form" />
+    <field name="arch" type="xml">
+      <notebook position="inside">
+        <page name="business_proposal" string="Business Proposal">
+          <group>
+            <group string="Basic information">
+              <field name="bp_instruction" />
+              <field name="bp_result" />
+            </group>
+          </group>
+        </page>
+      </notebook>
+      <sheet position="after">
+        <div class="oe_chatter">
+          <field name="message_follower_ids" options="{'post_refresh':True}" />
+          <field name="activity_ids" />
+          <field name="message_ids" options="{'post_refresh': 'recipients'}" />
+        </div>
+      </sheet>
+    </field>
+  </record>
+</odoo>
