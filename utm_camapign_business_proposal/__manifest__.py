@@ -66,7 +66,7 @@ sudo chmod +x /usr/bin/chromedriver
     'contributor': '',
     'maintainer': 'Vertel AB',
     'repository': 'https://github.com/vertelab/odoo-utm',
-    'depends': ['utm'],
+    'depends': ['utm', 'crm'],
     'data': [
         'views/utm_campaign_views.xml',
         'views/res_config_settings_views.xml',
