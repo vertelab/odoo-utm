@@ -39,7 +39,7 @@ class CrmLead(models.Model):
                             """
                 ),
                 bypass_cache=True,
-            ).dict()
+            ).model_dump()
             _logger.warning(f" {result=}")
 
             _logger.warning('\n'.join([f"<p><b>{key}</b> {val}</p>" for key, val in result.items()]))
