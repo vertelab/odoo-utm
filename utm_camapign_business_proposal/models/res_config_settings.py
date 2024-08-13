@@ -1,7 +1,6 @@
 from odoo import models, fields, api, _
 from datetime import date, datetime
 import logging
-from GoogleNews import GoogleNews
 import base64
 import requests
 
